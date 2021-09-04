@@ -10,7 +10,7 @@ Esse projeto foi desenvolvendo utilizando .NET 5.0 com a linguagem C# e a biblio
 
 ## Pré-requesitos
 
-:warning: [.NET 5.0](https://dotnet.microsoft.com/download)
+:warning: [.NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0/runtime)
 
 
 ## Como instalar a aplicação :arrow_forward:
