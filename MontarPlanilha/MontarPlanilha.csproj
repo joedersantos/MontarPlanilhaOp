@@ -5,7 +5,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <LangVersion>latest</LangVersion>
-    <AssemblyName>MontarPlanilha</AssemblyName>
+    <AssemblyName>MontaPlanilhaOp</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
