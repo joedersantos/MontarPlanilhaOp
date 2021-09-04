@@ -67,8 +67,6 @@ namespace MontarPlanilha
             else
                 axProft = Price - opOut.Price;
 
-            //axProft = axProft / 1000;
-
             return axProft == opOut.Profit;
         }
 
