@@ -48,5 +48,5 @@ MontaPlanilhaOp < csvTeste
 
 ## Caso queira desinstalar a ferramenta globalmente usando este comando: 
 ```
-dotnet tool uninstall --global authorize
+dotnet tool uninstall --global MontaPlanilhaOp
 ```

@@ -16,10 +16,12 @@ namespace MontarPlanilha.Utils
         public static decimal ToDecimal(this string value, int linha)
         {
             value = value.Trim().Replace(" ", "");
-            if (!decimal.TryParse(value, out decimal outDecimal))
+            if (decimal.TryParse(value, out decimal outDecimal))
+                return outDecimal;
+            else
                 throw new Exception($"Erro na conversão de dados comuna {linha}. Verifique o formato do arquivo .csv !");
 
-            return decimal.Parse(value, CultureInfo.InvariantCulture);
+            //return decimal.Parse(value, CultureInfo.InvariantCulture);
         }
     }
 }
