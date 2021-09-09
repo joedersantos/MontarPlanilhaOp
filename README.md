@@ -24,7 +24,7 @@ Esse projeto foi desenvolvendo utilizando .NET 5.0 com a linguagem C# e a biblio
 :heavy_check_mark:Instale a ferramenta globalmente usando este comando:
 
 ```
-dotnet tool install --global --add-source MontarPlanilha MontaPlanilhaOp
+dotnet tool install --global --add-source MontaPlanilhaOp
 ```
 
 ## Como a aplicação deve funcionar:
