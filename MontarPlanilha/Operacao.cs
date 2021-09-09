@@ -15,8 +15,8 @@ namespace MontarPlanilha
             Direction = colunas[4].Trim();
             Volume = colunas[5].ToInt(5);
             Price = colunas[6].ToDecimal(6);
-            Profit = colunas[10].ToDecimal(10);
-            //AddProfit(colunas[10].Trim());
+            //Profit = colunas[10].ToDecimal(10);
+            AddProfit(colunas[10].Trim());
         }
 
         #region privados Add
@@ -31,7 +31,7 @@ namespace MontarPlanilha
         private void AddProfit(string profit)
         {
             var ax = profit.ToDecimal(10);
-            //Profit = ax / 1000;
+            Profit = ax / 1000;
         }
         #endregion
         public int Id { get; private set; }
@@ -61,7 +61,7 @@ namespace MontarPlanilha
 
 
         public bool CheckOut(Operacao opOut)
-        {
+        {            
             decimal axProft;
             if (Type == "buy")
                 axProft = opOut.Price - Price;

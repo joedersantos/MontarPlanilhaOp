@@ -48,6 +48,8 @@ namespace MontarPlanilha
 
                         foreach (var iOut in opOut.Where(x => x.Date.Date == item.Date.Date).OrderBy(x => x.Date).ToList())
                         {
+                            Console.WriteLine($"{(iOut.Price - item.Price) == iOut.Profit} ==> axProft:{iOut.Price - item.Price} = {iOut.Profit} --> opOut.Price:{iOut.Price} Price:{item.Price}");
+
                             if (item.CheckOut(iOut))
                             {
                                 cout++;
